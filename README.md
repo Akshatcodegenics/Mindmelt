@@ -1,11 +1,11 @@
-###🧠 MindMelt
+🧠 MindMelt
 
 AI-Driven Online Journalism with Real-Time Mood Tracking
 
 MindMelt is a cutting-edge web platform that redefines digital journalism by integrating AI-based emotion detection and reader mood analytics. It helps news agencies, bloggers, and independent journalists understand how readers feel while consuming news content, leading to more personalized, ethical, and engaging storytelling.
 
-###🚀 Key Features
-###📰 Journalism Platform
+🚀 Key Features
+📰 Journalism Platform
 
 Publish and manage news articles with multimedia (text, image, and video).
 
@@ -13,7 +13,7 @@ Real-time editor dashboard with analytics on article reach and sentiment.
 
 SEO-optimized content pipeline for higher visibility.
 
-###😄 Mood Detection & Analytics
+😄 Mood Detection & Analytics
 
 Uses facial expression recognition and sentiment analysis to detect the reader’s emotional state while reading.
 
@@ -21,7 +21,7 @@ Emotion categories: Happy, Sad, Angry, Surprised, Neutral, etc.
 
 Data visualized using interactive charts and heatmaps.
 
-###🧩 AI Integration
+🧩 AI Integration
 
 NLP models to analyze reader comments and feedback sentiment.
 
@@ -29,7 +29,7 @@ Emotion AI via webcam or facial analysis (TensorFlow.js / MediaPipe).
 
 Recommendation Engine suggests articles matching reader mood.
 
-###🌐 User Interface
+🌐 User Interface
 
 Clean, minimal UI built with React / Next.js.
 
@@ -37,7 +37,7 @@ Responsive design for both desktop and mobile.
 
 Real-time emotion feedback indicator (color-coded or emoji-based).
 
-###🔐 Privacy & Security
+🔐 Privacy & Security
 
 User consent before camera access.
 
@@ -45,7 +45,7 @@ All mood-tracking data processed locally (client-side).
 
 GDPR and privacy-compliant data collection policies.
 
-###🏗️ Tech Stack
+🏗️ Tech Stack
 Layer	Technology
 Frontend	React.js / Next.js / Tailwind CSS / Chart.js
 Backend	Node.js / Express.js
@@ -88,7 +88,7 @@ npm start
 
 Access the app at http://localhost:3000
 
-###🧠 How It Works
+🧠 How It Works
 
 The reader opens an article.
 
@@ -129,7 +129,7 @@ Build a mobile app version for Android & iOS.
     ├── mood-tracker.png
     ├── dashboard.png
 
-###🤝 Contributing
+🤝 Contributing
 
 We welcome contributions!
 
@@ -141,12 +141,12 @@ Commit your changes
 
 Submit a Pull Request
 
-###🛡️ License
+🛡️ License
 
 This project is licensed under the MIT License — see the LICENSE
  file for details.
 
-###💬 Contact
+💬 Contact
 
 Team MindMelt
 
