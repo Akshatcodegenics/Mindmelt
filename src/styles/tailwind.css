@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FAFBFC; /* gray-50 */
+    --color-foreground: #2D3748; /* gray-800 */
+    --color-border: #E2E8F0; /* gray-200 */
+    --color-input: #F5F7FA; /* gray-100 */
+    --color-ring: #7C9CBF; /* blue-400 */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #2D3748; /* gray-800 */
+    
+    /* Popover Colors */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #2D3748; /* gray-800 */
+    
+    /* Muted Colors */
+    --color-muted: #F5F7FA; /* gray-100 */
+    --color-muted-foreground: #718096; /* gray-500 */
+    
+    /* Primary Colors */
+    --color-primary: #7C9CBF; /* blue-400 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #A8C09A; /* green-300 */
+    --color-secondary-foreground: #2D3748; /* gray-800 */
+    
+    /* Destructive Colors */
+    --color-destructive: #FC8181; /* red-300 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #E8B4B8; /* pink-200 */
+    --color-accent-foreground: #2D3748; /* gray-800 */
+    
+    /* Success Colors */
+    --color-success: #68D391; /* green-300 */
+    --color-success-foreground: #2D3748; /* gray-800 */
+    
+    /* Warning Colors */
+    --color-warning: #F6E05E; /* yellow-300 */
+    --color-warning-foreground: #2D3748; /* gray-800 */
+    
+    /* Error Colors */
+    --color-error: #FC8181; /* red-300 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Surface Color */
+    --color-surface: #F5F7FA; /* gray-100 */
+    
+    /* Text Colors */
+    --color-text-primary: #2D3748; /* gray-800 */
+    --color-text-secondary: #718096; /* gray-500 */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-caption {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .breathing-card {
+    @apply transition-transform duration-300 ease-out hover:scale-[1.02];
+  }
+
+  .gradient-depth {
+    background: radial-gradient(circle at center, rgba(124, 156, 191, 0.1) 0%, rgba(124, 156, 191, 0.3) 100%);
+  }
+
+  .micro-feedback {
+    @apply transition-colors duration-200;
+  }
+
+  .contextual-blur {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .organic-radius-sm {
+    border-radius: 8px;
+  }
+
+  .organic-radius-md {
+    border-radius: 12px;
+  }
+
+  .organic-radius-lg {
+    border-radius: 16px;
+  }
+
+  .organic-radius-xl {
+    border-radius: 24px;
+  }
+
+  .soft-shadow-sm {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .soft-shadow-md {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .soft-shadow-lg {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+.therapeutic-focus  {
+    @apply ring-2 ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .text-fluid-xs {
+    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  }
+
+  .text-fluid-sm {
+    font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  }
+
+  .text-fluid-base {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  }
+
+  .text-fluid-lg {
+    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  }
+
+  .text-fluid-xl {
+    font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  }
+
+  .text-fluid-2xl {
+    font-size: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+  }
+
+  .text-fluid-3xl {
+    font-size: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breathing-card {
+    @apply hover:scale-100;
+  }
+  
+  .micro-feedback {
+    @apply transition-none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
