@@ -7,7 +7,7 @@ import MoodJournal from './pages/mood-journal';
 import SettingsAndProfile from './pages/settings-and-profile';
 import Dashboard from './pages/dashboard';
 import LoginAndSignup from './pages/login-and-signup';
-import AIChatCompanion from './pages/ai-chat-companion';
+import AIChatCompanion from './pages/ai-chat-companion/Index.jsx';
 
 const Routes = () => {
   return (
